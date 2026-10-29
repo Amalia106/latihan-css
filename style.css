@@ -1,0 +1,172 @@
+ /* ===================================
+   STYLE KEDAI KOPI NUSANTARA
+   =================================== */
+
+/* 1. Reset Dasar & Body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f6f0;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* 2. Header & Navigasi */
+#header {
+  background-color: #3c2a21;
+  color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  font-size: 24px;
+  color: #e5ba73;
+  letter-spacing: 1px;
+}
+
+/* 3. Link Menu Navigasi */
+.menu-link {
+  color: #f5ebe0;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+  color: #e5ba73;
+}
+
+/* 4. Section Umum */
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 5. Judul Section */
+.judul {
+  font-size: 28px;
+  color: #3c2a21;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.judul::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: #e5ba73;
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* 6. Tombol Utama */
+.tombol {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background-color: #1a120b;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tombol:hover {
+  background-color: #e5ba73;
+  color: #1a120b;
+  transform: translateY(-2px);
+}
+
+/* 7. Kotak Menu Favorit */
+.kotak {
+  background-color: #ffffff;
+  border: 1px solid #e0d8cc;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 15px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.kotak:hover {
+  transform: translateY(-4px);
+}
+
+.kotak h3 {
+  color: #3c2a21;
+  margin-bottom: 10px;
+}
+
+/* 8. Kotak Spesial Highlight */
+.spesial {
+  border: 2px solid #e5ba73;
+  background-color: #fffdf7;
+  position: relative;
+}
+
+.spesial::before {
+  content: "★ SPESIAL";
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #e5ba73;
+  color: #1a120b;
+  padding: 3px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -12px;
+  right: 20px;
+}
+
+/* 9. Tabel Harga */
+.tabel {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tabel th,
+.tabel td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.tabel th {
+  background-color: #3c2a21;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* 10. Footer */
+#footer {
+  background-color: #1a120b;
+  color: #a59d95;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  margin-top: 40px;
+}
